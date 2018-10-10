@@ -35,7 +35,7 @@ public class Point {
         this.y += b;
     }
     
-    public void distance(Point a){
-        
+    public double distance(Point a){
+        return Math.sqrt(Math.pow(a.getX() - x, 2) + Math.pow(a.getY() - y,2));
     }
 }
